@@ -6,6 +6,8 @@ import Languages from '@theme/Languages';
 import Launchpad from '@theme/Launchpad';
 import Demos from '@theme/Demos';
 import Resources from '@theme/Resources';
+import Info from '@theme/Info';
+
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 function Home() {
@@ -14,10 +16,11 @@ function Home() {
     <Layout title={siteConfig.title} description={siteConfig.tagline}>
       <Hero />
       <main className="home-main">
-        <Languages />
-        <Launchpad />
+{/*        <Languages />
+        <Launchpad />*/}
         <Demos />
-        <Resources />
+        <Info />
+        {/*<Resources />*/}
       </main>
     </Layout>
   );

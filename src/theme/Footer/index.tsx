@@ -86,7 +86,6 @@ function Footer() {
             {logo && logo.src && (
               <div className="footer__logo-ctr">
                 <span className="footer__logo-tagline">
-                  Made with &lt;/&gt; by
                 </span>
                 {logo.href ? (
                   <a
@@ -160,6 +159,9 @@ function Footer() {
             }}
           />
         ) : null}
+        <center>
+          <img loading="lazy" className="footer__logo" alt={'EU logo'} src={'img/eu-logo.png'} />
+        </center>
       </div>
     </footer>
   );

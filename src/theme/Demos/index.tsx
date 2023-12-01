@@ -26,11 +26,6 @@ function Demos() {
                 <h5 className="title">Featured how-tos & tutorials</h5>
                 <ul className="links">
                   <li>
-                    <a href="/howtos/shoppingcart/">
-                      How to Build a Shopping App Using NodeJS and Redis
-                    </a>
-                  </li>
-                  <li>
                     <a href="/howtos/ratelimiting/">
                       How to Build a Rate Limiter Using Redis and Python
                     </a>

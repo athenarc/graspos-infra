@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  title: 'The Home of Redis Developers',
+  title: 'The Home of GraspOS Infrastracture',
   tagline:
     'Learn all the best practices to get up and running with Redis in no time. Get started and discover the power of Redis, whether on your local machines or in the cloud.',
   url: 'https://developer.redis.com',
@@ -10,7 +10,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'redis-developer', // Usually your GitHub org/user name.
-  projectName: 'redis-developer', // Usually your repo name.
+  projectName: 'gaspos-infra', // Usually your repo name.
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -210,8 +210,8 @@ module.exports = {
         style: 'dark',
         title: null,
         logo: {
-          alt: 'Redis Developer Hub logo',
-          src: 'img/logo-1.png',
+          alt: 'GraspOS logo',
+          src: 'img/logo.png',
         },
         hideOnScroll: true,
         items: [
@@ -219,93 +219,74 @@ module.exports = {
             type: 'search',
             position: 'right',
           },
-          {
-            to: '/howtos/quick-start',
-            activeBasePath: 'docs',
-            label: 'Get started',
-            position: 'right',
-          },
-          {
-            href: 'https://launchpad.redis.com',
-            label: 'Redis Launchpad',
-            position: 'right',
-          },
-          {
-            href: 'https://redis.com/try-free/',
-            label: 'Try Free',
-            position: 'right',
-          },
+          // {
+          //   to: '/howtos/quick-start',
+          //   activeBasePath: 'docs',
+          //   label: 'Get started',
+          //   position: 'right',
+          // },
+          // {
+          //   href: 'https://launchpad.redis.com',
+          //   label: 'Redis Launchpad',
+          //   position: 'right',
+          // },
+          // {
+          //   href: 'https://redis.com/try-free/',
+          //   label: 'Try Free',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
         style: 'dark',
         logo: {
-          alt: 'Redis logo',
-          src: 'img/redis_logo_red_white_rgb.svg',
-          href: 'https://redis.com/',
+          alt: 'GraspOS logo',
+          src: 'img/logo.png',
+          href: 'https://graspos.eu/',
         },
         links: [
           {
-            title: 'Get Started',
+            title: 'Follow us on',
             items: [
               {
-                label: 'Develop',
-                to: '/develop/',
+                label: 'Twitter',
+                to: 'https://twitter.com/GraspOS_project',
               },
               {
-                label: 'Best Practices',
-                href: 'https://redis.com/redis-best-practices/introduction/',
+                label: 'Mastodon',
+                href: 'https://scicomm.xyz/@graspos',
               },
-              // {
-              //   label: 'Tutorials',
-              //   to: '#',
-              // },
-              // {
-              //   label: 'Samples & Demos',
-              //   to: '#',
-              // },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/groups/9303131/',
+              },
             ],
           },
           {
             title: 'Resources',
             items: [
               {
-                label: 'Community',
+                label: 'Tools & Services',
                 href: 'https://redis.com/community/',
               },
               {
-                label: 'Redis University',
+                label: 'Datasets',
                 href: 'https://university.redis.com',
               },
               {
-                label: 'Redis Commands',
-                href: 'https://redis.io/commands',
-              },
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/search?q=redis',
-              },
-              //   label: 'Use Cases',
-              //   href: 'https://redis.com/solutions',
-              // },
+                label: 'About',
+                href: 'https://graspos.eu',
+              }
             ],
           },
         ],
-        copyright: `Copyright: © ${new Date().getFullYear()} Redis. All rights reserved. Redis and the cube logo are registered trademarks of Redis Ltd.`,
+        copyright: 'This project has received funding from the European Union’s Horizon Europe framework programme under grant agreement No. 101095129. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Executive Agency. Neither the European Union nor the European Research Executive Agency can be held responsible for them.'
       },
       colorMode: {
         // Hides the switch in the navbar
         // Useful if you want to support a single color mode
-        disableSwitch: false,
-      },
-        announcementBar: {
-          id: 'redis-7-2-release', // Any value that will identify this message.
-          content:
-            '<div class="announcement-bar"><a href="https://redis.com/blog/introducing-redis-7-2/" target="_blank" rel="noopener"><span>Announcing Redis 7.2 and Enhanced Vector DB</span> <span style="margin-left:1rem">Learn more</span> <span style="margin-left:0.25rem">→</span></a></div>',
-          backgroundColor: 'rgb(210, 215, 254)', // Defaults to `#fff`.
-          textColor: 'rgb(22 31 49)', // Defaults to `#000`.
-          isCloseable: true, // Defaults to `true`.
-        },
+        disableSwitch: true,
+      }
     }),
   presets: [
     [

@@ -22,40 +22,26 @@ function Hero() {
             <div className="row">
               <div className="col col--8">
                 <h1 className="hero-title">
-                  The Home of
-                  <br /> Redis Developers
-                </h1>
+                  Next Generation 
+                  <br/> Research Assessment 
+                  <br/> to Promote Open Science
+                  <br/><br/>
+                  <img loading="lazy" className="eosc__logo" alt={'EOSC logo'} src={'img/eosc-logo.png'} />
 
-                <h2 className="hero-subtitle">
+                </h1>
+                {/*<h2 className="hero-subtitle">
                   <Typed
-                    strings={['>_ Made by developers for developers']}
+                    strings={['> supporting EOSC']}
                     typeSpeed={75}
                   />
-                </h2>
+                </h2>*/}
+
               </div>
               <div className="col col--4">
                 <SvgHero color="#FFFFFF" className="illustration" />
               </div>
             </div>
             <div className="boxes">
-              <div className="box box-create">
-                <SvgCreateBg color="#FFFFFF" className="bg" />
-                <span className="icon">
-                  <SvgCreate color="#FFFFFF" />
-                </span>
-                <div className="text">
-                  <h3 className="title">Create</h3>
-                  <p className="description">
-                    Create a new database using cloud, Docker or from source
-                  </p>
-                  <span className="more">
-                    Create a database <SvgArrowRight color="#DC382C" />
-                  </span>
-                </div>
-                <a href={useBaseUrl('/create/')} className="link">
-                  Read More
-                </a>
-              </div>
 
               <div className="box box-develop">
                 <SvgDevelopBg color="#FFFFFF" className="bg" />
@@ -63,12 +49,13 @@ function Hero() {
                   <SvgDevelop color="#FFFFFF" />
                 </span>
                 <div className="text">
-                  <h3 className="title">Develop</h3>
+                  <h3 className="title">Tools & Services</h3>
                   <p className="description">
-                    Develop your application using your favorite language
+                    Explore tools and services that can facilitate the
+implementation of Open-Science-aware Responsible Research Assessment practices.
                   </p>
                   <span className="more">
-                    Code your application <SvgArrowRight color="#DC382C" />
+                    Explore our services <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
                 <a href={useBaseUrl('/develop/')} className="link">
@@ -82,13 +69,13 @@ function Hero() {
                   <SvgExplore color="#FFFFFF" />
                 </span>
                 <div className="text">
-                  <h3 className="title">Explore</h3>
+                  <h3 className="title">Datasets</h3>
                   <p className="description">
-                    Insert,update and explore your database using RedisInsight
+                    Upload, update and explore dataset resources compiled in the context of GraspOS.
                   </p>
                   <span className="more">
-                    Explore your data
-                    <SvgArrowRight color="#DC382C" />
+                    Explore our data
+                    <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
                 <a href={useBaseUrl('/explore/')} className="link">
@@ -102,15 +89,18 @@ function Hero() {
                   <SvgOperate />
                 </span>
                 <div className="text">
-                  <h3 className="title">Operate</h3>
+                  <h3 className="title">About</h3>
                   <p className="description">
-                    Provision Redis and accelerate app deployment using DevOps
+                    Learn more about the GraspOS project that paves the way towards an Open-Science-aware Responsible Research Assessment system.
                   </p>
                   <span className="more">
-                    Operate your database
-                    <SvgArrowRight color="#DC382C" />
+                    Learn more about GraspOS
+                    <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
+                <a href={'https://graspos.eu/'} className="link">
+                  Read More
+                </a>
               </div>
             </div>
           </div>
