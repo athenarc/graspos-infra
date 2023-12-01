@@ -38,7 +38,7 @@ function Hero() {
 
               </div>
               <div className="col col--4">
-                <SvgHero color="#FFFFFF" className="illustration" />
+                <img loading="lazy" className="" alt={'OS logo'} src={'img/OS-logo.png'} />
               </div>
             </div>
             <div className="boxes">

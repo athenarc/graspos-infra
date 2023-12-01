@@ -1,15 +1,14 @@
 const path = require('path');
 
 module.exports = {
-  title: 'The Home of GraspOS Infrastracture',
-  tagline:
-    'Learn all the best practices to get up and running with Redis in no time. Get started and discover the power of Redis, whether on your local machines or in the cloud.',
+  title: 'The GraspOS Infrastracture',
+  tagline: 'Next Generation Research Assessment to Promote Open Science',
   url: 'https://malta.imsi.athenarc.gr',
   baseUrl: '/graspos-infra',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'redis-developer', // Usually your GitHub org/user name.
+  organizationName: 'athenarc', // Usually your GitHub org/user name.
   projectName: 'gaspos-infra', // Usually your repo name.
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -187,7 +186,7 @@ module.exports = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: '/img/redis-hero-image.jpg',
+      image: '/img/logo.png',
       // ...
       googleTagManager: {
         trackingID: 'GTM-W8Z6BLQ',
