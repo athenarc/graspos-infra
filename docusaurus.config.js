@@ -4,8 +4,8 @@ module.exports = {
   title: 'The Home of GraspOS Infrastracture',
   tagline:
     'Learn all the best practices to get up and running with Redis in no time. Get started and discover the power of Redis, whether on your local machines or in the cloud.',
-  url: 'https://developer.redis.com',
-  baseUrl: '/',
+  url: 'https://malta.imsi.athenarc.gr',
+  baseUrl: '/graspos-infra',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
