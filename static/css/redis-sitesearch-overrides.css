@@ -5,7 +5,8 @@
 
  .redis-sitesearch {
    max-width: 700px;
-   min-width: 350px
+   min-width: 350px;
+   display: none; /* for now, hide the searchbar */
  }
 
  .redis-sitesearch .search-root-item .search-root,

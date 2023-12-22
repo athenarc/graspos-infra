@@ -54,6 +54,7 @@ html[data-theme='dark'] {
 
 .home-main {
   overflow: hidden;
+  text-align: justify;
 }
 
 .announcement-bar {
@@ -73,3 +74,59 @@ html[data-theme='dark'] {
   width: 450px;
   white-space: pre-wrap;
 }
+
+.btn-link-white-bg {
+  margin-top: 55px;
+  text-align: center;
+
+  @include mobile {
+    margin-top: 50px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 11px 32px 12px;
+    border-radius: 3px;
+    background-color: $red;
+    text-decoration: none;
+    line-height: 1;
+    letter-spacing: 0.25px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+
+    &:hover {
+      background-color: $primary-blue;
+      color: $white;
+    }
+  }
+}
+
+  .btn-link-dark-bg {
+    margin-top: 55px;
+    text-align: center;
+
+    @include mobile {
+      margin-top: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 32px 12px;
+      border-radius: 3px;
+      background-color: $red;
+      text-decoration: none;
+      line-height: 1;
+      letter-spacing: 0.25px;
+      font-size: 14px;
+      font-weight: 700;
+      color: $white;
+      transition: background-color .2s ease-in-out, color .2s ease-in-out;
+
+      &:hover {
+        background-color: $white;
+        color: $red;
+      }
+    }
+  }

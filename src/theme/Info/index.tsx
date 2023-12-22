@@ -39,7 +39,7 @@ function Info() {
           The latest from your favorite community to support your Redis journey
         </h3>*/}
 
-        <div className="cta">
+        <div className="btn-link-dark-bg">
           <a
             href="mailto:graspos-pm@athenarc.gr"
             target="_blank"

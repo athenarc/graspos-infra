@@ -214,10 +214,10 @@ module.exports = {
         },
         hideOnScroll: true,
         items: [
-          {
-            type: 'search',
-            position: 'right',
-          },
+          // {
+          //   type: 'search',
+          //   position: 'right',
+          // },
           // {
           //   to: '/howtos/quick-start',
           //   activeBasePath: 'docs',
@@ -265,12 +265,16 @@ module.exports = {
             title: 'Resources',
             items: [
               {
-                label: 'Tools & Services',
-                href: 'https://redis.com/community/',
+                label: 'Services Catalogue',
+                href: 'https://graspos-services.athenarc.gr',
+              },
+              {
+                label: 'Tools Catalogue',
+                href: 'https://zenodo.org/communities/graspos-tools',
               },
               {
                 label: 'Datasets',
-                href: 'https://university.redis.com',
+                href: 'https://graspos-data.athenarc.gr',
               },
               {
                 label: 'About',

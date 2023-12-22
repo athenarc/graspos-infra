@@ -2,25 +2,25 @@ import React from 'react';
 
 function Launchpad() {
   return (
-    <section className="rds-launchpad">
-      <div className="container" id="resources">
-        <h2 className="section-title white">
-          <br />
-        </h2>
-        <h3 className="section-description white"></h3>
-
-        <a
-          href="https://launchpad.redis.com"
-          target="_blank"
-          rel="noopener"
-          className="link">
-          <img
-            src="/img/launchpad.png"
-            className="thumb"
-            loading="lazy"
-            alt="Redis Launchpad"
-          />
-        </a>
+    <section className="rds-launchpad" id="data-registry">
+      <div className="container white" id="resources">
+        <h2 className="section-title white"> Data Registry</h2>
+        <br/>
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+       
+        <div className="row">
+          <div className="col col--12 btn-link-dark-bg">
+            <a
+              href="https://graspos-data.athenarc.gr/"
+              target="_blank"
+              rel="noopener"
+              className="btn">
+              Data Registry
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

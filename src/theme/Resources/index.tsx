@@ -41,7 +41,7 @@ function Resources() {
         </h3>
 
         <Slider className="row articles" {...sliderSettings}>
-          <div className="col col--4">
+          <div className="col col--6">
             <article className="article">
               <div className="article-wrapper">
                 <img
@@ -67,7 +67,7 @@ function Resources() {
               </div>
             </article>
           </div>
-          <div className="col col--4">
+          <div className="col col--6">
             <article className="article">
               <div className="article-wrapper">
                 <img
@@ -94,7 +94,7 @@ function Resources() {
               </div>
             </article>
           </div>
-          <div className="col col--4">
+          {/* <div className="col col--4">
             <article className="article">
               <div className="article-wrapper">
                 <img
@@ -118,10 +118,10 @@ function Resources() {
                 </a>
               </div>
             </article>
-          </div>
+          </div> */}
         </Slider>
 
-        <div className="cta">
+        {/* <div className="btn-link-dark-bg">
           <a
             href="https://redis.com/community/"
             target="_blank"
@@ -129,7 +129,7 @@ function Resources() {
             className="btn">
             Join the community
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

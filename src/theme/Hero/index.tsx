@@ -49,16 +49,16 @@ function Hero() {
                   <SvgDevelop color="#FFFFFF" />
                 </span>
                 <div className="text">
-                  <h3 className="title">Tools & Services</h3>
+                  <h3 className="title">Tools & Services Catalogue</h3>
                   <p className="description">
                     Explore tools and services that can facilitate the
 implementation of Open-Science-aware Responsible Research Assessment practices.
                   </p>
                   <span className="more">
-                    Explore our services <SvgArrowRight color="#AE538E" />
+                    Explore our tools & services <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
-                <a href={useBaseUrl('/develop/')} className="link">
+                <a href={'#tools-services'} className="link">
                   Read More
                 </a>
               </div>
@@ -69,16 +69,16 @@ implementation of Open-Science-aware Responsible Research Assessment practices.
                   <SvgExplore color="#FFFFFF" />
                 </span>
                 <div className="text">
-                  <h3 className="title">Datasets</h3>
+                  <h3 className="title">Data Registry</h3>
                   <p className="description">
                     Upload, update and explore dataset resources compiled in the context of GraspOS.
                   </p>
                   <span className="more">
-                    Explore our data
+                    Explore our data assets
                     <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
-                <a href={useBaseUrl('/explore/')} className="link">
+                <a href={'#data-registry'} className="link">
                   Read More
                 </a>
               </div>
@@ -98,7 +98,7 @@ implementation of Open-Science-aware Responsible Research Assessment practices.
                     <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
-                <a href={'https://graspos.eu/'} className="link">
+                <a href={'#about'} className="link">
                   Read More
                 </a>
               </div>

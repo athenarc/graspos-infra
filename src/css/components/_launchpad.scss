@@ -3,7 +3,8 @@
   padding: 80px 0 85px;
   border-radius: 10px 10px 0 0;
   background-color: $primary-blue;
-
+  color: $white;
+  
   @include mobile {
     margin-top: 59px;
     padding: 54px 0 53px;
@@ -190,34 +191,6 @@
         right: 0;
         overflow: hidden;
         text-indent: -9999px;
-      }
-    }
-  }
-
-  .cta {
-    margin-top: 55px;
-    text-align: center;
-
-    @include mobile {
-      margin-top: 50px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 11px 32px 12px;
-      border-radius: 3px;
-      background-color: $red;
-      text-decoration: none;
-      line-height: 1;
-      letter-spacing: 0.25px;
-      font-size: 14px;
-      font-weight: 700;
-      color: $white;
-      transition: background-color .2s ease-in-out, color .2s ease-in-out;
-
-      &:hover {
-        background-color: $white;
-        color: $red;
       }
     }
   }
