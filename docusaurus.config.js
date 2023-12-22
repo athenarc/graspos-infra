@@ -3,8 +3,10 @@ const path = require('path');
 module.exports = {
   title: 'The GraspOS Infrastracture',
   tagline: 'Next Generation Research Assessment to Promote Open Science',
-  url: 'https://malta.imsi.athenarc.gr',
-  baseUrl: '/graspos-infra',
+//  url: 'https://malta.imsi.athenarc.gr',
+//  baseUrl: '/graspos-infra',
+  url: 'https://graspos-infra.athenarc.gr',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -273,7 +275,7 @@ module.exports = {
                 href: 'https://zenodo.org/communities/graspos-tools',
               },
               {
-                label: 'Datasets',
+                label: 'Data Registry',
                 href: 'https://graspos-data.athenarc.gr',
               },
               {
