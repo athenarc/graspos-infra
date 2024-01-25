@@ -24,6 +24,9 @@
 @import './components/marketo';
 @import './components/cards';
 @import './components/lp';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+
 
 /* You can override the default Infima variables here. */
 :root {
@@ -42,6 +45,7 @@
   --ifm-transition-timing-default: ease-in-out;
 
   --ifm-global-radius: 10px;
+  --ifm-font-family-base: 'Montserrat', sans-serif;
 }
 
 html[data-theme='dark'] {
@@ -76,7 +80,6 @@ html[data-theme='dark'] {
 }
 
 .btn-link-white-bg {
-  margin-top: 55px;
   text-align: center;
 
   @include mobile {

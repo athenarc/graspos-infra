@@ -5,58 +5,33 @@ import SvgDots from '@site/src/svg/Dots';
 
 function Demos() {
   return (
-    <section className="rds-demos" id="about">
-      <div className="container">
-        <h2 className="section-title">
-          <br />
-        </h2>
+    <section className="rds-languages" id="about">
 
-        <div className="row terminals">
-          <img
-            src={useBaseUrl('/img/code-1.png')}
-            className="code"
-            alt="Background image of sample redis code"
-          />
-          <div className="col col--6">
-            <div className="terminal right">
-              <div className="terminal-header">
-                <SvgDots />
-              </div>
-              <div className="terminal-body">
-                <h5 className="title">About the GraspOS project</h5>
-                <br/>
-                <p>
-                  Integer ut dolor lacinia eros hendrerit lacinia. Vivamus tincidunt vulputate urna, a ullamcorper diam porta a. Phasellus volutpat venenatis mauris sed elementum. Aenean at velit ultricies, suscipit erat et, tempus velit. Fusce aliquet felis sit amet lorem dapibus, et volutpat ante hendrerit. Mauris purus risus, porta tempor metus sit amet, ultricies tincidunt odio. Donec ac nibh a felis rutrum malesuada eu ut ante. Etiam pretium tellus vitae pharetra laoreet.
-                </p>
-                <div className="col col--12 btn-link-white-bg">
-                  <a
-                    href="https://graspos.eu"
-                    target="_blank"
-                    rel="noopener"
-                    className="btn">
-                    GraspOS website
-                  </a>
-                </div>
-                {/* <ul className="links">
-                  <li>
-                    <a href="/howtos/ratelimiting/">
-                      How to Build a Rate Limiter Using Redis and Python
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/howtos/leaderboard/">
-                      How to Build a Real-Time Leaderboard App Using Redis
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/howtos/solutions/microservices/caching">
-                      How to Implement Cache-aside Using Redis and NodeJS
-                    </a>
-                  </li>
-                </ul> */}
-              </div>
-            </div>
+      <div className="container">
+        <h2 className="section-title">About the GraspOS project</h2>
+        {/* <h3 className="section-description" sty>In a nutshell</h3> */}
+      <br/>
+      <div className="row" style={{ alignItems: 'center', justifyContent: 'center'}}>
+          <div className='col col--6'>
+          <img loading="lazy" className="" alt={'Services Catalogue'} src={'img/os4.png'} />
+        </div>
+        <div className='col col--6'>
+          <p>
+          The <b>GrapOS project</b> develops, assesses and operates an open and trusted federated infrastructure for next generation research metrics and indicators, offering data, tools, services and guidance. 
+          </p>
+
+          <div className="col--offset-1 btn-link-white-bg">
+            
+            <a
+              href="https://graspos.eu/"
+              target="_blank"
+              rel="noopener"
+              className="btn">
+              Find out more
+            </a>
           </div>
+          
+        </div>
         </div>
       </div>
     </section>

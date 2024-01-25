@@ -3,32 +3,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import Slider, { Settings } from 'react-slick';
 
 function Info() {
-  const sliderSettings: Settings = {
-    infinite: true,
-    centerMode: true,
-    centerPadding: '32.5px',
-    speed: 500,
-    arrows: false,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 10000,
-        settings: 'unslick',
-      },
-      {
-        breakpoint: 996,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 750,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
   return (
     <section className="rds-resources">
       <div className="container" id="resources">

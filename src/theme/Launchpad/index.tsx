@@ -6,12 +6,19 @@ function Launchpad() {
       <div className="container white" id="resources">
         <h2 className="section-title white"> Data Registry</h2>
         <br/>
-        <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-       
-        <div className="row">
-          <div className="col col--12 btn-link-dark-bg">
+        <div className="row" style={{ alignItems: 'center', justifyContent: 'center'}}>
+        <div className='col col--6'>
+          <p>
+            The <b>Data Registry</b> allows users to be informed about and understand the data assets within the infrastructure. 
+            
+            It collects metadata and access information for all the onboarded data sources. 
+            </p>
+            <p>
+              More specifically, apart from a set of basic metadata related to each data source (e.g., its title, owners, licence), the GraspOS data registry also contains information about the location of the respective GraspOS API deployment, enabling the programmatic access to the data source contents
+          </p>
+
+          {/* <div className="row"> */}
+          <div className="btn-link-dark-bg">
             <a
               href="https://graspos-data.athenarc.gr/"
               target="_blank"
@@ -19,8 +26,14 @@ function Launchpad() {
               className="btn">
               Data Registry
             </a>
-          </div>
         </div>
+        {/* </div> */}
+        </div>
+        <div className='col col--6'>
+                  <img loading="lazy" className="" alt={'Services Catalogue'} src={'img/os3.png'} />
+
+          </div>
+          </div>
       </div>
     </section>
   );

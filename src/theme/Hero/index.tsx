@@ -20,7 +20,7 @@ function Hero() {
         <div className="row">
           <div className="col col--12">
             <div className="row">
-              <div className="col col--8">
+              <div className="col col--7">
                 <h1 className="hero-title">
                   Next Generation 
                   <br/> Research Assessment 
@@ -29,20 +29,13 @@ function Hero() {
                   <img loading="lazy" className="eosc__logo" alt={'EOSC logo'} src={'img/eosc-logo.png'} />
 
                 </h1>
-                {/*<h2 className="hero-subtitle">
-                  <Typed
-                    strings={['> supporting EOSC']}
-                    typeSpeed={75}
-                  />
-                </h2>*/}
-
               </div>
-              <div className="col col--4">
-                <img loading="lazy" className="" alt={'OS logo'} src={'img/OS-logo.png'} />
+              <div className="col col--5">
+                <img loading="lazy" className="" alt={'OS logo'} src={'img/os1.svg'} />
+                {/* <img loading="lazy" className="" alt={'OS logo'} src={'img/os1.png'} /> */}
               </div>
             </div>
             <div className="boxes">
-
               <div className="box box-develop">
                 <SvgDevelopBg color="#FFFFFF" className="bg" />
                 <span className="icon">
