@@ -102,7 +102,7 @@ implementation of Open-Science-aware Responsible Research Assessment practices.
                 <div className="text">
                   <h3 className="title">API Specification</h3>
                   <p className="description">
-                    Learn more about the GraspOS project that paves the way towards an Open-Science-aware Responsible Research Assessment system.
+                    Introducing our API specification: Empowering seamless, responsible research practices.
                   </p>
                   <span className="more">
                     Learn more about our APIs
