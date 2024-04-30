@@ -5,7 +5,7 @@ import Slider, { Settings } from 'react-slick';
 function Info() {
   return (
     <section className="rds-resources">
-      <div className="container" id="resources">
+      <div className="container" id="contact">
         <h2 className="section-title white">
           Want more information?
         </h2>

@@ -231,11 +231,16 @@ module.exports = {
           //   label: 'Redis Launchpad',
           //   position: 'right',
           // },
-          // {
-          //   href: 'https://redis.com/try-free/',
-          //   label: 'Try Free',
-          //   position: 'right',
-          // },
+          {
+            href: '/#about',
+            label: 'About',
+            position: 'right',
+          },
+          {
+            href: '/#contact',
+            label: 'Contact',
+            position: 'right',
+          },
         ],
       },
       footer: {

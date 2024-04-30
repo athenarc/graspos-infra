@@ -32,7 +32,6 @@ function Hero() {
               </div>
               <div className="col col--5">
                 <img loading="lazy" className="" alt={'OS logo'} src={'img/os1.svg'} />
-                {/* <img loading="lazy" className="" alt={'OS logo'} src={'img/os1.png'} /> */}
               </div>
             </div>
             <div className="boxes">
@@ -76,7 +75,7 @@ implementation of Open-Science-aware Responsible Research Assessment practices.
                 </a>
               </div>
 
-              <div className="box box-operate">
+              {/* <div className="box box-operate">
                 <SvgExploreBg color="#FFFFFF" className="bg" />
                 <span className="icon">
                   <SvgOperate />
@@ -92,6 +91,25 @@ implementation of Open-Science-aware Responsible Research Assessment practices.
                   </span>
                 </div>
                 <a href={'#about'} className="link">
+                  Read More
+                </a>
+              </div> */}
+              <div className="box box-operate">
+                <SvgExploreBg color="#FFFFFF" className="bg" />
+                <span className="icon">
+                  <SvgOperate />
+                </span>
+                <div className="text">
+                  <h3 className="title">API Specification</h3>
+                  <p className="description">
+                    Learn more about the GraspOS project that paves the way towards an Open-Science-aware Responsible Research Assessment system.
+                  </p>
+                  <span className="more">
+                    Learn more about our APIs
+                    <SvgArrowRight color="#AE538E" />
+                  </span>
+                </div>
+                <a href={useBaseUrl('/apis')} className="link">
                   Read More
                 </a>
               </div>
