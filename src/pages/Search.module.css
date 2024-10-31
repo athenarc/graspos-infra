@@ -4,6 +4,10 @@
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
 }
 
 .header {
@@ -15,7 +19,7 @@
 .searchWrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .searchInput {
@@ -70,7 +74,7 @@
 
 .resultsContainer {
     width: 100%;
-    margin-top: 20px;
+    flex: 1;
 }
 
 .resultRow {
@@ -153,3 +157,10 @@
     margin-right: 4px; /* Adds a small gap between icon and number */
 }
 
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #333;
+}

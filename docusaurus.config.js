@@ -232,13 +232,13 @@ module.exports = {
           //   position: 'right',
           // },
           {
-            href: '/#about',
-            label: 'About',
+            href: '/',
+            label: 'Home',
             position: 'right',
           },
           {
-            href: '/#contact',
-            label: 'Contact',
+            href: '/search',
+            label: 'Search',
             position: 'right',
           },
         ],
