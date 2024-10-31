@@ -27,7 +27,7 @@ const SearchPage = () => {
                 params: {
                     size: 10,
                     page: pageNum,
-                    // communities: 'graspos-tools',
+                    communities: 'graspos-tools',
                     q: sanitizedTerm,
                 },
             });
