@@ -234,7 +234,7 @@ module.exports = {
       label: 'APIs',
       items: [
         'apis/index-apis',
-        'apis/import/index-import',
+        // 'apis/import/index-import',
         // 'apis/redisdatasource/index-redisdatasource',
         // 'apis/datadog/index-datadog',
         // 'apis/riot/index-riot',

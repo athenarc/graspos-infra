@@ -1,34 +1,31 @@
 ---
 id: index-apis
-title: Explore our APIs
+title: GraspOS API Specification
 sidebar_label: Overview
 slug: /apis
 ---
 
-import RedisCard from '@theme/RedisCard';
+The GraspOS API specification is designed to facilitate data exchange and interoperability between onboarded metadata sources and value-added services. 
+Built upon an extension of the Scientific Knowledge Graph Interoperability Framework (SKG-IF), 
+this specification introduces additional concepts tailored for research assessment applications, such as indicators and narratives.
 
-The following links provides you with the available options to explore a new Redis database either on the Cloud or using local software.
 
-<div class="row">
+At this stage, the GraspOS API specification includes essential functionality through an API resolver, 
+enabling metadata retrieval in compliance with the SKG-IF framework. 
+While a fully-featured API remains a longer-term goal, this initial implementation focuses on supporting basic operations that ensure seamless integration with third-party services.
 
-<div class="col">
-  <RedisCard
-    title="Redis Datasource for Grafana"
-    description="An out-of-the-box predefined build Grafana dashboard for Redis"
-    page="/explore/redisdatasource"
-  />
-</div>
+#### Core Endpoints
 
-</div>
+GraspOS will support APIs modeled on the guidelines provided in the SKG-IF specification. Users are encouraged to refer to the SKG-IF API Documentation for detailed descriptions of core endpoints and their expected functionality.
 
-<div class="row">
+GraspOS will align with these specifications, including endpoints for:
 
-<div class="col">
-  <RedisCard
-    title="RIOT"
-    description="A set of import/export command line utilities for Redis"
-    page="/explore/riot"
-  />
-</div>
+Listing supported identifier schemes.
+Resolving individual identifiers within specified schemes.
+Batch resolution of multiple identifier pairs.
+These APIs will enable seamless interaction with GraspOS services while maintaining compatibility with the broader SKG-IF ecosystem.
 
-</div>
+#### Extensibility and Future Work
+
+The current specification supports foundational data exchange requirements, with room for extensions to accommodate additional parameters or functionalities. As GraspOS evolves, further discussions within project's working groups will explore the feasibility of developing a more comprehensive API specification to address advanced interoperability needs.
+

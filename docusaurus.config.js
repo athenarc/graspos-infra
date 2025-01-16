@@ -307,9 +307,9 @@ module.exports = {
           routeBasePath: '/',
           path: 'docs',
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateTime: true,
+          showLastUpdateTime: false,
           editUrl:
-            'https://github.com/redis-developer/redis-developer/edit/master/',
+            'https://github.com/athenarc/graspos-infra/edit/master/',
         },
         blog: {
           showReadingTime: true,
