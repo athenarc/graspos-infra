@@ -109,7 +109,7 @@ implementation of Open-Science-aware Responsible Research Assessment practices.
                     <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
-                <a href={useBaseUrl('/apis')} className="link">
+                <a href={useBaseUrl('/api-spec')} className="link">
                   Read More
                 </a>
               </div>

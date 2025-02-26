@@ -1,0 +1,29 @@
+---
+id: api-spec
+title: GraspOS API Specification
+sidebar_label: Overview
+slug: /api-spec
+---
+
+The GraspOS API specification is designed to facilitate data exchange and interoperability between onboarded metadata sources and value-added services. 
+Built upon the **RA-SKG extension** of the [Scientific Knowledge Graphs Interoperability Framwork (SKG-IF)](https://skg-if.github.io/), 
+this specification refines the current SKG-IF API specification and further extends it to enhance its applicability across a broader range of research assessment use cases.
+
+## Resolver and Search APIs  
+
+GraspOS will support APIs modeled on the guidelines provided in the RA-SKG extension. 
+Users are encouraged to refer to the **RA-SKG Documentation** for detailed descriptions of the core entities.  
+
+Τhis API specification defines two main types of APIs:  
+
+* **[Resolver API](./api-spec/resolver-api)** – This follows the approach proposed by the **SKG-IF API specification**, offering a basic resolver mechanism to retrieve single or multiple entities given specific identifiers.  
+
+* **[Search API](./api-spec/search-api)** – A newly introduced API that supports search functionalities for all the core entities defined in the RA-SKG model, allowing more flexible data exploration and retrieval.  
+
+These endpoints will enable seamless interaction with GraspOS services while maintaining compatibility with the broader RA-SKG ecosystem.  
+
+## Support
+
+The current specification supports foundational data exchange requirements, with room for extensions to accommodate additional parameters or functionalities. As GraspOS evolves, further discussions within the project's working groups will explore the feasibility of developing a more comprehensive API specification to address advanced interoperability needs.
+
+If you have any questions or require assistance, please contact us at **[graspos-pm@athenarc.gr](mailto:graspos-pm@athenarc.gr)**.

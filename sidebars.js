@@ -231,10 +231,11 @@ module.exports = {
     // },
     {
       type: 'category',
-      label: 'APIs',
+      label: 'API specification',
       items: [
-        'apis/index-apis',
-        // 'apis/import/index-import',
+        'apis/api-spec',
+        'apis/resolver-api',
+        'apis/search-api',
         // 'apis/redisdatasource/index-redisdatasource',
         // 'apis/datadog/index-datadog',
         // 'apis/riot/index-riot',
