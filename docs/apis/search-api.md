@@ -75,8 +75,8 @@ The following filters can be used to refine search results for research products
 |----------------------------|-------------|
 | `filter.product_type`      | Filters by research product type: `literature`, `research data`, `research software`, or `other`. |
 | `filter.topic`             | Filters by associated topic identifier. |
-| `filter.contibution_by`       | Filters by agent identifier who contributed to the research product. |
-| `filter.contibution_declared_affiliation`       | Filters by the declared affiliation of the agent that contributed to the research product. |
+| `filter.contibutions.by`       | Filters by agent identifier who contributed to the research product. |
+| `filter.contibutions.declared_affiliation`       | Filters by the declared affiliation of the agent that contributed to the research product. |
 | `filter.relevant_organisation` | Filters by relevant organisation identifiers associated with the research product. |
 | `filter.funding`           | Filters by associated grant identifiers. |
 <!-- These are defined inside the manifestations (that is an array); how should we include those?-->
