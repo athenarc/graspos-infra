@@ -40,11 +40,10 @@ Each API response follows a standardised JSON format, including a common header 
 
 ```json
 {
-
     "header": {
-        "numFound": 100, 
+        "num_found": 100, 
         "page": 1,
-        "pageSize": 10
+        "page_size": 10
     },
     "results": [ ... ]
 }
@@ -52,9 +51,9 @@ Each API response follows a standardised JSON format, including a common header 
 
 The `header` segment in the response contains the following properties:
 
-* **numFound** - Total number of results matching the query.
+* **num_found** - Total number of results matching the query.
 * **page** - Current page number.
-* **pageSize** - Number of results returned per page.
+* **page_size** - Number of results returned per page.
 
 Finally, the `results` field contains an array of entity objects, as described in the RA-SKG, matching the query.
 
