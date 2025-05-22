@@ -190,4 +190,3 @@ To support filtering based on the [ra_profiles](https://skg-if.github.io/ext-ra-
 | `ra_profile.ra_section.ra_content_contains`    | Keyword or phrase search within the `ra_content` text of all sections. Useful for full-text search or relevance.                                                                   |
 | `ra_profile.ra_section.description` | Filter sections by description text, e.g., to find those with specific guidelines like word limits or thematic focus.      
 | `ra_profile.ra_section.cites`       | Filter entities that cite a specific research product by its identifier. Multiple comma-separated values allow filtering for sections citing any of the listed products. |
-                                                        |
