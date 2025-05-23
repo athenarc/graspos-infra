@@ -172,9 +172,9 @@ These parameters enable filtering capabilities over both scalar metrics (e.g., c
 | `ra_metric.ra_value_min`   | Minimum threshold for the metric value.                     | Scalar |
 | `ra_metric.ra_value_max`   | Maximum threshold for the metric value.                     | Scalar |
 | `ra_metric.ra_provider`    | ID of the Agent that provided the metric.        | Scalar, Badge |
-| `ra_metric.class`       | The URL of the class identifying the entity (e.g., in an ontology) describing that type.        | Badge |
-| `ra_metric.label`       | The label describing the type. | Badge |
-| `ra_metric.defined_in`  | The URL of the schema of the manifestation type.               | Badge |
+| `ra_metric.ra_category.class`       | The URL of the class identifying the entity (e.g., in an ontology) describing that type.        | Badge |
+| `ra_metric.ra_category.label`       | The label describing the type. | Badge |
+| `ra_metric.ra_category.defined_in`  | The URL of the schema of the manifestation type.               | Badge |
 
 
 ### Filtering by RA-SKG profiles
