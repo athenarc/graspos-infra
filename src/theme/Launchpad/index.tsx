@@ -20,7 +20,7 @@ function Launchpad() {
           {/* <div className="row"> */}
           <div className="btn-link-dark-bg">
             <a
-              href="https://graspos-data.athenarc.gr/"
+              href="https://zenodo.org/communities/graspos-datasets"
               target="_blank"
               rel="noopener"
               className="btn">

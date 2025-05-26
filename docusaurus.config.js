@@ -281,7 +281,7 @@ module.exports = {
               },
               {
                 label: 'Data Registry',
-                href: 'https://graspos-data.athenarc.gr',
+                href: 'https://zenodo.org/communities/graspos-datasets',
               },
               {
                 label: 'About',

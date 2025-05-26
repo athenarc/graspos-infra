@@ -11,16 +11,14 @@ Built upon the **[RA-SKG extension](https://skg-if.github.io/ext-ra-skg/)** of t
 
 The **GraspOS project** has actively contributed to the development of the SKG-IF Core API specification, ensuring it meets real-world interoperability needs in the context of Open Science-aware research assessment.
 
-## Resolver and Search APIs  
 
-GraspOS will support APIs modeled on the guidelines provided in the RA-SKG extension. 
-Users are encouraged to refer to the **RA-SKG Documentation** for detailed descriptions of the core entities.  
 
-Τhis API specification defines two main types of APIs:  
+## API endpoints
 
-* **[Resolver API](/api-spec/resolver-api)** – This follows the approach proposed by the **SKG-IF API specification**, offering a basic resolver mechanism to retrieve single or multiple entities given specific identifiers.  
+This API specification enables users to explore the various entities, facilitating structured metadata retrieval for different types of research-related information.
 
-* **[Search API](/api-spec/search-api)** – A newly introduced API that supports search functionalities for all the core entities defined in the RA-SKG model, allowing more flexible data exploration and retrieval.  
+The API provides endpoints for all core entities of [SKG-IF](https://skg-if.github.io/), as extended by [RA-SKG](https://skg-if.github.io/ext-ra-skg/), offering **two endpoints per entity**:
+- One for retrieving [a single record by its unique identifier](/apis/search-api/get-a-single-entity),
+- One for [searching multiple records using filters](/apis/search-api/searching-for-entities).
 
 These endpoints will enable seamless interaction with GraspOS services while maintaining compatibility with the broader RA-SKG ecosystem.  
-

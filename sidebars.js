@@ -234,16 +234,8 @@ module.exports = {
       label: 'API specification',
       items: [
         'apis/api-spec',
-        'apis/resolver-api',
-        {
-          type: 'category',
-          label: 'Search API',
-          link: { type: 'doc', id: 'apis/search-api/search-api' },
-          items: [
-            'apis/search-api/get-a-single-entity',
-            'apis/search-api/searching-for-entities',
-          ],
-        },
+        'apis/search-api/get-a-single-entity',
+        'apis/search-api/searching-for-entities',
         'apis/support',
         // 'apis/redisdatasource/index-redisdatasource',
         // 'apis/datadog/index-datadog',
