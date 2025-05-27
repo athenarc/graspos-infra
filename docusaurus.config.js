@@ -188,7 +188,7 @@ module.exports = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: '/img/logo.png',
+      image: 'https://graspos-infra.athenarc.gr/img/logo.png',
       // ...
       googleTagManager: {
         trackingID: 'GTM-W8Z6BLQ',
