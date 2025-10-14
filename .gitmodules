@@ -1,0 +1,3 @@
+[submodule "graspos-catalogue"]
+	path = graspos-catalogue
+	url = https://github.com/athenarc/graspos-catalogue.git
