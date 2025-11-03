@@ -4,7 +4,8 @@ The Core API specification provides endpoints for retrieving multiple records of
 The following endpoints are available for searching:
 
 - **Research Products** – `/api/products`
-- **Agents** – `/api/agents`
+- **Persons** – `/api/persons`
+- **Organisations** – `/api/organisations`
 - **Grants** – `/api/grants`
 - **Venues** – `/api/venues`
 - **Topics** – `/api/topics`
@@ -80,21 +81,30 @@ The following filters can be used to refine search results for research products
 
 See the [RA-SKG Metrics Filtering](#filtering-by-ra-skg-metrics) section for available query parameters related to research assessment indicators.
 
-### Agents
+### Persons
 
-The following filters can be used to refine search results for agents. 
+The following filters can be used to refine search results for persons. 
 
 | **Filter name**         | **Description** |
 |-------------------------|----------------|
-| `entity_type` | Filter by the type of agent: `agent` (generic), `person`, or `organisation`. |
-| `name` | Filter agents by their full name. |
-| `affiliations.affiliation` | Filter agents by affiliated organisation ID. |
+| `name` | Filter persons by their full name. |
+| `affiliations.affiliation` | Filter persons by affiliated organisation ID. |
+
+See the [RA-SKG Metrics Filtering](#filtering-by-ra-skg-metrics) section for available query parameters related to research assessment indicators, and the [RA-SKG Profiles Filtering](#filtering-by-ra-skg-profiles) section for available query parameters related to research assessment profiles.
+
+### Organizations
+
+The following filters can be used to refine search results for organizations. 
+
+| **Filter name**         | **Description** |
+|-------------------------|----------------|
+| `name` | Filter organizations by their full name. |
 | `short_name` | Filter organisations by their short name or acronym. |
 | `other_names` | Filter organisations by alternative names. |
 | `country` | Filter organisations by country code (ISO 3166-1 alpha-2). |
-| `type` | Filter organisations by type; refer [here](https://skg-if.github.io/interoperability-framework/docs/agent.html#type) for all available type options. |
+<!-- | `type` | Filter organisations by type; refer [here](https://skg-if.github.io/interoperability-framework/docs/agent.html#type) for all available type options. | -->
 
-See the [RA-SKG Metrics Filtering](#filtering-by-ra-skg-metrics) section for available query parameters related to research assessment indicators, and the [RA-SKG Profiles Filtering](#filtering-by-ra-skg-profiles) section for available query parameters related to research assessment profiles.
+See the [RA-SKG Metrics Filtering](#filtering-by-ra-skg-metrics) section for available query parameters related to research assessment indicators.
 
 ### Grants
 
@@ -160,21 +170,35 @@ The following filters can be used to refine search results for data sources.
 
 ### Filtering by RA-SKG metrics
 
-To support filtering by metrics as defined in the RA-SKG extension (for [Products](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-research-product.html) and [Agents](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-agent.html)), the GraspOS API specification introduces additional query parameters. These filters enable users to refine search results based on the presence and values of research assessment indicators, as described by the [ra_metrics](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-research-product.html#ra_metrics) property.
+To support filtering by metrics as defined in the RA-SKG extension (for [Products](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-research-product.html) and [Agents](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-agent.html) - both Persons and Organizations), the GraspOS API specification introduces additional query parameters. These filters enable users to refine search results based on the presence and values of research assessment indicators, as described by the [ra_metrics](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-research-product.html#ra_metrics) property.
 
 These parameters enable filtering capabilities over both scalar metrics (e.g., citation counts) and badges. Some filters are applicable exclusively to one type (scalar or badge), while others are relevant to both.
 
+#### Attribute filters
+
+Query parameters for exact match filtering.
+
 | Filter name      | Description                                                              | Applicable for |
 | -------------------- | ------------------------------------------------------------------------ | -------------- |
-| `ra_metric.ra_measure.class`       | The URL of the class identifying the entity (e.g., in an ontology) describing that type. | Scalar |
-| `ra_metric.ra_measure.label`       | The label describing the type. | Scalar |
-| `ra_metric.ra_measure.defined_id`  | The URL of the schema of the manifestation type. | Scalar |
-| `ra_metric.ra_value_min`   | Minimum threshold for the metric value.                     | Scalar |
-| `ra_metric.ra_value_max`   | Maximum threshold for the metric value.                     | Scalar |
-| `ra_metric.ra_provider`    | ID of the Agent that provided the metric.        | Scalar, Badge |
-| `ra_metric.ra_category.class`       | The URL of the class identifying the entity (e.g., in an ontology) describing that type.        | Badge |
-| `ra_metric.ra_category.label`       | The label describing the type. | Badge |
-| `ra_metric.ra_category.defined_in`  | The URL of the schema of the manifestation type.               | Badge |
+| `ra_metrics.ra_provider`    | ID of the Agent that provided the metric.        | Scalar, Badge |
+| `ra_metrics.ra_metric.ra_measure.class`       | The URL of the class identifying the entity (e.g., in an ontology) describing that type. | Scalar |
+| `ra_metrics.ra_metric.ra_measure.labels`       | The label describing the type. | Scalar |
+| `ra_metrics.ra_metric.ra_measure.defined_id`  | The URL of the schema of the manifestation type. | Scalar |
+| `ra_metrics.ra_metric.ra_category.class`       | The URL of the class identifying the entity (e.g., in an ontology) describing that type.        | Badge |
+| `ra_metrics.ra_metric.ra_category.labels`       | The label describing the type. | Badge |
+| `ra_metrics.ra_metric.ra_category.defined_in`  | The URL of the schema of the manifestation type.               | Badge |
+
+
+#### Convenience filters
+
+These filters are not properties of the [RA-SKG Research product](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-research-product.html) or [RA-SKG Agent](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-agent.html), but they are useful for some common use cases.
+
+
+| Filter name      | Description                                                              | Applicable for |
+| -------------------- | ------------------------------------------------------------------------ | -------------- |
+| `cf.search.ra_metrics.description`    | Keyword of phrase search in the `description` of the given metrics.        | Scalar, Badge |
+| `cf.min.ra_metrics.ra_metric.ra_value`   | Minimum threshold for the metric value.                     | Scalar |
+| `cf.max.ra_metrics.ra_metric.ra_value`   | Maximum threshold for the metric value.                     | Scalar |
 
 
 ### Filtering by RA-SKG profiles
@@ -182,11 +206,22 @@ These parameters enable filtering capabilities over both scalar metrics (e.g., c
 To support filtering based on the [ra_profiles](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-agent.html#ra_profiles) field of RA-SKG Agents, the GraspOS API specification defines the following additional query parameters. These filters allow users to search for Agents that include specific profile information.
 
 
+#### Attribute filters
+
+Query parameters for exact match filtering.
+
 | Filter name                | Description                                                                                                                                                                        |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `ra_profile.title`       | Filter entities that include an RA profile with a given title (full or partial match).                                                                                             |
-| `ra_profile.ra_template`       | Filter by the URL of the template that is used to create the CV.                                                                                             |
-| `ra_profile.ra_section.title`       | Filter entities that include a section within an RA profile matching this title (full or partial match).                                                                                                   |
-| `ra_profile.ra_section.ra_content_contains`    | Keyword or phrase search within the `ra_content` text of all sections. Useful for full-text search or relevance.                                                                   |
-| `ra_profile.ra_section.description` | Filter sections by description text, e.g., to find those with specific guidelines like word limits or thematic focus.      
-| `ra_profile.ra_section.cites`       | Filter entities that cite a specific research product by its identifier. Multiple comma-separated values allow filtering for sections citing any of the listed products. |
+| `ra_profiles.ra_template`       | Filter by the URL of the template that is used to create the CV.                                                                                             |
+| `ra_profiles.ra_sections.cites`       | Filter entities that cite a specific research product by its identifier. |
+
+#### Convenience filters
+
+These filters are not properties of the [RA-SKG Agent](https://skg-if.github.io/ext-ra-skg/extended-interoperability-framework/core-extensions/ra-skg-agent.html), but they are useful for some common use cases.
+
+| Filter name                | Description                                                                                                                                                                        |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cf.search.ra_profiles.ra_title`       | Keyword or phrase search in the titles of the `ra_profiles`.                                                                                             |
+| `cf.search.ra_profiles.ra_sections.ra_title`       | Keyword or phrase search in the section titles of the `ra_profiles`.                                                                                                   |
+| `cf.search.ra_profiles.ra_sections.description` | Keyword or phrase search in the section descriptions of the `ra_profiles`, e.g., to find those with specific thematic focus.     |
+| `cf.search.ra_profiles.ra_sections.ra_content`    | Keyword or phrase search in the content of all sections of the `ra_profiles`.                                                                   |

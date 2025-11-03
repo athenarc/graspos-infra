@@ -60,16 +60,16 @@ function Hero() {
                   <SvgExplore color="#FFFFFF" />
                 </span>
                 <div className="text">
-                  <h3 className="title">Data Registry</h3>
+                  <h3 className="title">Resource Metadata Schema</h3>
                   <p className="description">
-                    Upload, update and explore dataset resources compiled in the context of GraspOS.
+                    A metadata schema that describes diverse resource types and supports advanced filtering to improve resource discoverability.
                   </p>
                   <span className="more">
-                    Explore our data assets
+                    Explore the metadata schema
                     <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
-                <a href={'#data-registry'} className="link">
+                <a href={'#metadata-schema'} className="link">
                   Read More
                 </a>
               </div>

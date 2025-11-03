@@ -11,7 +11,8 @@ where `base_url` is the base URL of the API, `entity_type` is the type of entity
 Below is a list of the available single-entity endpoints:
 
 - **Research Products** – `/api/products/{local_identifier}`
-- **Agents** – `/api/agents/{local_identifier}`
+- **Persons** – `/api/persons/{local_identifier}`
+- **Organisations** – `/api/organisations/{local_identifier}`
 - **Grants** – `/api/grants/{local_identifier}`
 - **Venues** – `/api/venues/{local_identifier}`
 - **Topics** – `/api/topics/{local_identifier}`
@@ -22,7 +23,7 @@ You can retrieve the data of a single entity by providing the entity's [local id
 
 
 ## Response
-The response for a single entity request will return the entity's data in JSON format. The structure of the response will depend on the entity type, and can be one of the following: [Product](https://skg-if.github.io/interoperability-framework/docs/research-product.html), [Agent](https://skg-if.github.io/interoperability-framework/docs/agent.html), [Grant](https://skg-if.github.io/interoperability-framework/docs/grant.html), [Venue](https://skg-if.github.io/interoperability-framework/docs/venue.html), [Topic](https://skg-if.github.io/interoperability-framework/docs/topic.html), or [Data source](https://skg-if.github.io/interoperability-framework/docs/data-source.html).
+The response for a single entity request will return the entity's data in JSON format. The structure of the response will depend on the entity type, and can be one of the following: [Product](https://skg-if.github.io/interoperability-framework/docs/research-product.html), [Agent](https://skg-if.github.io/interoperability-framework/docs/agent.html) (Person or Organization), [Grant](https://skg-if.github.io/interoperability-framework/docs/grant.html), [Venue](https://skg-if.github.io/interoperability-framework/docs/venue.html), [Topic](https://skg-if.github.io/interoperability-framework/docs/topic.html), or [Data source](https://skg-if.github.io/interoperability-framework/docs/data-source.html).
 
 ## Example
 If you want to retrieve the metadata of the research product with the local identifier `12345`, you would make a GET request to the following URL:
