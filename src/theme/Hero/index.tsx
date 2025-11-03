@@ -41,13 +41,12 @@ function Hero() {
                   <SvgDevelop color="#FFFFFF" />
                 </span>
                 <div className="text">
-                  <h3 className="title">Tools & Services Catalogue</h3>
+                  <h3 className="title">Core Catalogues</h3>
                   <p className="description">
-                    Explore tools and services that can facilitate the
-implementation of Open-Science-aware Responsible Research Assessment practices.
+                    Explore resources that can facilitate the implementation of Open-Science-aware Responsible Research Assessment practices.
                   </p>
                   <span className="more">
-                    Explore our tools & services <SvgArrowRight color="#AE538E" />
+                    Explore our catalogues <SvgArrowRight color="#AE538E" />
                   </span>
                 </div>
                 <a href={'#tools-services'} className="link">

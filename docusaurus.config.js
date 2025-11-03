@@ -237,8 +237,8 @@ module.exports = {
             position: 'right',
           },
           {
-            href: '/search',
-            label: 'Search',
+            href: 'https://graspos-infra.athenarc.gr/catalogue',
+            label: 'Meta-Catalogue',
             position: 'right',
           },
         ],
