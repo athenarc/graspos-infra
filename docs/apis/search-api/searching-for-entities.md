@@ -102,7 +102,6 @@ The following filters can be used to refine search results for organizations.
 | `short_name` | Filter organisations by their short name or acronym. |
 | `other_names` | Filter organisations by alternative names. |
 | `country` | Filter organisations by country code (ISO 3166-1 alpha-2). |
-<!-- | `type` | Filter organisations by type; refer [here](https://skg-if.github.io/interoperability-framework/docs/agent.html#type) for all available type options. | -->
 
 See the [RA-SKG Metrics Filtering](#filtering-by-ra-skg-metrics) section for available query parameters related to research assessment indicators.
 
