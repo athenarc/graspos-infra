@@ -59,7 +59,7 @@ function Languages() {
             </div>
             <div className="btn-link-white-bg">
               <a
-                href="#"
+                href="https://zenodo.org/communities/graspos-assessment-process-resources"
                 target="_blank"
                 rel="noopener"
                 className="btn">

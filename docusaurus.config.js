@@ -272,16 +272,24 @@ module.exports = {
             title: 'Resources',
             items: [
               {
-                label: 'Services Catalogue',
-                href: 'https://graspos-services.athenarc.gr',
+                label: 'Data Catalogue',
+                href: 'https://zenodo.org/communities/graspos-datasets',
               },
               {
                 label: 'Tools Catalogue',
                 href: 'https://zenodo.org/communities/graspos-tools',
               },
               {
-                label: 'Data Registry',
-                href: 'https://zenodo.org/communities/graspos-datasets',
+                label: 'Services Catalogue',
+                href: 'https://graspos-services.athenarc.gr',
+              },
+              {
+                label: 'Templates & Guidance Material Catalogue',
+                href: 'https://zenodo.org/communities/graspos-assessment-process-resources',
+              },
+              {
+                label: 'Resource Metadata Schema',
+                href: 'https://zenodo.org/records/17240299',
               },
               {
                 label: 'About',

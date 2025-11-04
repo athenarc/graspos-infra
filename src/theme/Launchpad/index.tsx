@@ -19,15 +19,15 @@ function Launchpad() {
           </p>} */}
 
           {/* <div className="row"> */}
-          {/* <div className="btn-link-dark-bg">
+          <div className="btn-link-dark-bg">
             <a
-              href="https://zenodo.org/communities/graspos-datasets"
+              href="https://zenodo.org/records/17240299"
               target="_blank"
               rel="noopener"
               className="btn">
-              Data Registry
+              Resource Metadata Schema
             </a>
-        </div> */}
+        </div>
         {/* </div> */}
         </div>
         <div className='col col--6'>
