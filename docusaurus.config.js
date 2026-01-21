@@ -281,7 +281,7 @@ module.exports = {
               },
               {
                 label: 'Services Catalogue',
-                href: 'https://graspos-services.athenarc.gr',
+                href: 'https://catalogue.openaire.eu',
               },
               {
                 label: 'Templates & Guidance Material Catalogue',

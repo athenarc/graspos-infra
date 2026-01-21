@@ -50,7 +50,7 @@ function Languages() {
             </div>
             <div className="btn-link-white-bg">
               <a
-                href="https://graspos-services.athenarc.gr/"
+                href="https://catalogue.openaire.eu/"
                 target="_blank"
                 rel="noopener"
                 className="btn">
